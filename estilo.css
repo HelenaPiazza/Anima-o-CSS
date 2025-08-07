@@ -1,0 +1,106 @@
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    animation: mymove 5s infinite,colorchange 5s ease-in-out infinite;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-left: 40%;
+}
+
+@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+    }
+
+@keyframes colorchange {
+    0% { background-color: black;}
+    25% { background-color: green;}
+    75% { background-color: hsl(0, 100%, 50%);}
+    100% { background-color: hsl(120, 95%, 7%);}
+}
+.bola{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    animation: mymove 5s infinite, colorchange2 5s ease-in-out infinite;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-left: 40%;
+}
+
+@keyframes colorchange2 {
+    0% { background-color: #ff0000;}
+    25% { background-color: #5e0101;}
+    75% { background-color: hsl(0, 100%, 3%);}
+    100% { background-color: lab(72.36% -72.95 69.37);}
+}
+
+.quadrado2{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    animation: mymove 5s infinite, colorchange 5s ease-in-out infinite;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-left: 47%;
+    margin-top: -440px;
+}
+.quadrado3{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    animation: mymove 5s infinite, colorchange 5s ease-in-out infinite;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-left: 47%;
+}
+.quadrado4{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    animation: mymove 5s infinite, colorchange 5s ease-in-out infinite;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-left: 54%;
+    margin-top: -440px;
+}
+.quadrado5{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    animation: mymove 5s infinite, colorchange 5s ease-in-out infinite;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-left: 54%;
+    margin-top: 120px;
+}
+body{
+    animation: go-back 1s infinite;
+}
+@keyframes go-back {
+	0% {
+		transform: translateX(100px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/*---------------------------------------------------REAL------------------------------------------*/
+
+
+
+
+
+
+
+
