@@ -19,7 +19,7 @@
 @keyframes colorchange {
     0% { background-color: black;}
     25% { background-color: green;}
-    75% { background-color: hsl(0, 100%, 50%);}
+    75% { background-color: hwb(108 0% 53%);}
     100% { background-color: hsl(120, 95%, 7%);}
 }
 .bola{
@@ -36,7 +36,7 @@
 @keyframes colorchange2 {
     0% { background-color: #ff0000;}
     25% { background-color: #5e0101;}
-    75% { background-color: hsl(0, 100%, 3%);}
+    75% { background-color: hwb(0 0% 0% / 0.856);}
     100% { background-color: lab(72.36% -72.95 69.37);}
 }
 
@@ -93,6 +93,18 @@ body{
 	100% {
 		transform: translateX(0);
 	}
+}
+
+.fila1{
+    margin-right: 1%;
+}
+.fila2{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.fila3{
+    margin-left: 1%;
 }
 
 /*---------------------------------------------------REAL------------------------------------------*/
