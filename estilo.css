@@ -1,4 +1,4 @@
-.quadrado{
+/*.quadrado{
     width: 100px;
     height: 100px;
     background-color: black;
@@ -109,10 +109,61 @@ body{
 
 /*---------------------------------------------------REAL------------------------------------------*/
 
+body{
+    display: flex;
+    height: max-content;
 
+}
+.f1, .f2, .f3 {
+    background-color: hsl(0, 0%, 100%);
+    width: 120px;
+    height: 400px;
+}
 
+.bola{
+    width: 85%;
+    height: 26%;
+    background-color: rgb(201, 21, 24);
+    border-radius: 100%;
+    margin-bottom: 7%;
+    margin-left: 300px;
+    position:relative;
+    opacity: 0; 
+    animation: aparecer 0.5s forwards;
+    animation-delay: 1.5s;
+}
 
+.q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9{
+    width: 93%;
+    height: 25%;
+    background-color: rgb(55, 153, 54);
+    margin-bottom: 10%;
+    border-radius: 7%;
+    position: relative;
+    animation: mymove 1.5s linear forwards;
+}
 
+.espaco{
+    width: 93%;
+    height: 25%;
+    margin-bottom: 7%;
+}
 
-
-
+@keyframes mymove{
+     0%   {top: 100px; left: 0px; width: 0px;}
+     100% {top: 100px; left: 300px; width: 100px;}
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+      top: 100px;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      top: 100px;
+    }
+  }
+  
+  
