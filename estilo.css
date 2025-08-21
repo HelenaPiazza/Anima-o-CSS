@@ -111,9 +111,10 @@ body{
 
 body{
     display: flex;
-    height: max-content;
-
+    height: 60vh;
+    align-items: center;
 }
+
 .f1, .f2, .f3 {
     background-color: hsl(0, 0%, 100%);
     width: 120px;
@@ -126,11 +127,11 @@ body{
     background-color: rgb(201, 21, 24);
     border-radius: 100%;
     margin-bottom: 7%;
-    margin-left: 300px;
+    margin-left: 150px;
     position:relative;
     opacity: 0; 
     animation: aparecer 0.5s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.8s;
 }
 
 .q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9{
@@ -140,7 +141,52 @@ body{
     margin-bottom: 10%;
     border-radius: 7%;
     position: relative;
-    animation: mymove 1.5s linear forwards;
+   /*animation: mymove 0.8s linear forwards;*/
+}
+.q1{
+    opacity: 0;
+    animation: mymove 0.8s linear forwards;
+}
+.q2{
+    opacity: 0;
+    animation: mymove 0.8s linear forwards;
+    animation-delay: 0.4s;
+}
+.q3{
+    opacity: 0;
+    animation: mymove 0.8s linear forwards;
+    animation-delay: 0.8s;
+}
+.q4{
+    opacity: 0;
+    animation: mymove 0.8s linear forwards;
+    animation-delay: 0.12s;
+}
+.q5{
+    opacity: 0;
+    animation: mymove 0.8s linear forwards;
+    animation-delay: 0.16s;
+}
+.q6{
+    opacity: 0;
+    animation: mymove 0.8s linear forwards;
+    animation-delay: 0.20s;
+}
+.q7{
+    opacity: 0;
+    animation: mymove 0.8s linear forwards;
+    animation-delay: 0.24s;
+}
+.q8{ 
+    opacity: 0;
+    animation: mymove 0.8s linear forwards;
+    animation-delay: 0.28s;
+}
+.q9{
+    opacity: 0;
+    animation: mymove 0.8s linear forwards;
+    animation-delay: 0.32s;
+
 }
 
 .espaco{
@@ -151,7 +197,7 @@ body{
 
 @keyframes mymove{
      0%   {top: 100px; left: 0px; width: 0px;}
-     100% {top: 100px; left: 300px; width: 100px;}
+     100% {top: 100px; left: 150px; width: 100px; opacity: 100;}
 }
 @keyframes aparecer {
     0% {
@@ -165,5 +211,15 @@ body{
       top: 100px;
     }
   }
+
+  .nome{
+    margin-top: 100px;
+    margin-left: 300px;
+    opacity: 0;
+  }
+
+
+
+
   
   
