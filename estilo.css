@@ -1,8 +1,8 @@
 body{
-    position: relative;
+    width: 100vw;
     display: flex;
     height: 100vh;
-    align-items: center; 
+    
 }
 .logo{
     display: flex;
@@ -138,7 +138,6 @@ body{
     animation: cair 0.7s linear forwards;
 }
 .nome{
-    display: none;
     position: relative;
     animation-delay: 10s;
     animation: cair 0.7s linear forwards;
