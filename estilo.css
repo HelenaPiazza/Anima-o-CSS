@@ -6,6 +6,9 @@ body{
 }
 .logo{
     display: flex;
+    width: 70%;
+    height: 90%;
+    margin-top: 10%;
 }
 .f1, .f2, .f3 {
     background-color: hsl(0, 0%, 100%);
@@ -99,52 +102,79 @@ body{
       transform: scale(1);
     }
   }
-
-
-
   .curso{
-    margin-top: 300px;
-    margin-left: 300px;
+    margin-top: 5%;
   }
 
-  @keyframes cruso02{
-    0% {right:-200px;opacity: 0;}
-    25% {right:-100px; opacity: 1;}
-    50% {right:50px; opacity: 1;}
-    75% {right: 50px; opacity: 1;}
-    100% {right:-50px; opacity: 0;}
+  @keyframes curso{
+    0% {right: 100px;opacity: 0;}
+    25% {right: 250px; opacity: 1;}
+    50% {right: 400px; opacity: 1;}
+    75% {right: 500px; opacity: 1;}
+    100% {right:500px; opacity: 1;}
+  }
+
+  @keyframes EM {
+     0% {right:10px;opacity: 0;}
+    25% {right: 250px; opacity: 1;}
+    50% {right:500px; opacity: 1;}
+    75% {right: 500px; opacity: 1;}
+    100% {right:500px; opacity: 1;}
+  }
+
+  .EM{
+    opacity: 0;
+    position: relative;
+    animation: EM 4s linear forwards;
+    animation-delay: 0.7s;
   }
 
   .info {
     opacity: 0;
     position: relative;
-    animation: cruso02  2s linear forwards;
+    animation: curso  1.5s linear forwards;
     animation-delay: 2s;
 
   }
   .adm {
     opacity: 0;
     position: relative;
-    animation: cruso02  2s linear forwards;
-    animation-delay: 4s;
-    margin-bottom: 200px;
+    animation: curso  1.5s linear forwards;
+    animation-delay: 2.5s;
   }
 
  .faixa {
-    width: 900px;
-    height: 1060px;
+    right: 0;
+    width: 30%;
+    height: 100%;
     background-color: #194619;
-    position: relative;
-    animation: cair 0.7s linear forwards;
+    position:absolute;
+    animation: cair 1s linear forwards, cobrir 1.5s ease-out forwards;
+    animation-delay: 0s, 4s;
 }
 .nome{
-    position: relative;
+    opacity: 0;
+    margin-left: 30%;
+    position: absolute;
     animation-delay: 10s;
-    animation: cair 0.7s linear forwards;
+    animation: nomecair 1s ease-out forwards;
+    animation-delay: 5s;
   }
 @keyframes cair{
     0%{top:-700px}
     100%{top:0px}
+}
+
+@keyframes cobrir {
+    0% {width: 30%;}
+    100%{width: 100%;}
+}
+
+@keyframes nomecair {
+    0%{top: -1000px; opacity: 1;}
+    100%{top: 30%; opacity: 1;}
+    
+    
 }
 
 
